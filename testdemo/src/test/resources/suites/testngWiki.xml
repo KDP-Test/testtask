@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<test name="Test">
+		<parameter name="username" value="chromeauto11"></parameter>
+		<parameter name="password" value="usertest23"></parameter>
+		<parameter name="searchtext" value="Automation Engineering"></parameter>
+		<classes>
+			<class name="tests.TestMainPage" />
+			<class name="tests.TestLoginPage" />
+
+		</classes>
+	</test>
+</suite>

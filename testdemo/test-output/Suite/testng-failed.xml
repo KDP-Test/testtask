@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <parameter name="searchtext" value="Automation Engineering"/>
+  <parameter name="password" value="usertest"/>
+  <parameter name="username" value="chromeauto"/>
+  <test name="Test(failed)">
+    <parameter name="searchtext" value="Automation Engineering"/>
+    <parameter name="password" value="usertest"/>
+    <parameter name="username" value="chromeauto"/>
+    <classes>
+      <class name="tests.TestLoginPage">
+        <methods>
+          <include name="invalidLoginTest" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- tests.TestLoginPage -->
+      <class name="tests.TestMainPage">
+        <methods>
+          <include name="teardown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- tests.TestMainPage -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
